@@ -1,0 +1,9 @@
+.footer{
+    position: absolute;
+    background-color: rgb(139, 184, 185);
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 50vh 0 50vh rgb(139, 184, 185);
+    text-align: center;
+    margin-top: 2em;
+}
