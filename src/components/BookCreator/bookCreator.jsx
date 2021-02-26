@@ -40,17 +40,15 @@ class BookCreator extends Component {
                     <h3>Add a new book!</h3>
                 </center>
                 <form onSubmit={this.handleSubmit}>
-                    <div className="row col-align"> 
-                        <div className="col-md-4">
-                            <label>Title: </label>
-                            <input type="text" name="title" value={this.state.title} onChange={this.handleChange} />
+                    <div className="form-row"> 
+                        <div className="col-md-5">
+                            <input type="text" className="form-control" name="title" placeholder="Book Title" value={this.state.title} onChange={this.handleChange} required/>
                         </div>
-                        <div className="col-md-4">
-                            <label>Author: </label>
-                            <input type="text" name="author" value={this.state.author} onChange={this.handleChange} />
+                        <div className="col-md-5">
+                            <input type="text" className="form-control" name="author" placeholder="Author Name" value={this.state.author} onChange={this.handleChange} required/>
                         </div>
-                        <div className="col-md-4">
-                            <input type="submit" value="Add" /> 
+                        <div className="col-md-2">
+                            <input type="submit" className="btn btn-block" style={{backgroundColor: 'rgb(139, 184, 185)'}} value="Add" /> 
                         </div>
                     </div>
                 </form>
